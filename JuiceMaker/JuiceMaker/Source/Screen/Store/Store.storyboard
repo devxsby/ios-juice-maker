@@ -39,6 +39,7 @@
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="MnR-hs-VkW">
                                                 <rect key="frame" x="28.666666666666657" y="196" width="94" height="32"/>
                                                 <connections>
+                                                    <action selector="fruitImageDidTap:" destination="Y6W-OH-hqX" eventType="touchDragOutside" id="6EQ-25-Ay9"/>
                                                     <action selector="stockStepperDidTap:" destination="Y6W-OH-hqX" eventType="valueChanged" id="2XX-FI-zOS"/>
                                                 </connections>
                                             </stepper>
@@ -54,7 +55,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SlE-aw-sLX">
                                         <rect key="frame" x="167.33333333333334" y="0.0" width="151.00000000000003" height="228"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GvH-Q6-c1c">
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GvH-Q6-c1c">
                                                 <rect key="frame" x="0.0" y="0.0" width="151" height="153.66666666666666"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <nil key="textColor"/>
@@ -70,6 +71,7 @@
                                             <stepper opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="IZ6-dK-cHt">
                                                 <rect key="frame" x="28.333333333333314" y="196" width="94" height="32"/>
                                                 <connections>
+                                                    <action selector="fruitImageDidTap:" destination="Y6W-OH-hqX" eventType="touchDragOutside" id="eg5-2G-uIJ"/>
                                                     <action selector="stockStepperDidTap:" destination="Y6W-OH-hqX" eventType="valueChanged" id="kbb-ex-3ka"/>
                                                 </connections>
                                             </stepper>
@@ -85,7 +87,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VT3-um-Hwt">
                                         <rect key="frame" x="334.33333333333331" y="0.0" width="151.33333333333331" height="228"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍍" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tJy-oH-bhJ">
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍍" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tJy-oH-bhJ">
                                                 <rect key="frame" x="0.0" y="0.0" width="151.33333333333334" height="153.66666666666666"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <nil key="textColor"/>
@@ -101,6 +103,7 @@
                                             <stepper opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="VcE-hL-IZT">
                                                 <rect key="frame" x="28.666666666666686" y="196" width="94" height="32"/>
                                                 <connections>
+                                                    <action selector="fruitImageDidTap:" destination="Y6W-OH-hqX" eventType="touchDragOutside" id="UeL-PE-P4W"/>
                                                     <action selector="stockStepperDidTap:" destination="Y6W-OH-hqX" eventType="valueChanged" id="PnZ-R1-07P"/>
                                                 </connections>
                                             </stepper>
@@ -116,7 +119,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3kn-8b-obW">
                                         <rect key="frame" x="501.66666666666663" y="0.0" width="151" height="228"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🥝" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wLg-sk-RrL">
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🥝" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wLg-sk-RrL">
                                                 <rect key="frame" x="0.0" y="0.0" width="151" height="153.66666666666666"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <nil key="textColor"/>
@@ -132,6 +135,7 @@
                                             <stepper opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Zte-vD-EYH">
                                                 <rect key="frame" x="28.666666666666742" y="196" width="94" height="32"/>
                                                 <connections>
+                                                    <action selector="fruitImageDidTap:" destination="Y6W-OH-hqX" eventType="touchDragOutside" id="Sts-SA-sMQ"/>
                                                     <action selector="stockStepperDidTap:" destination="Y6W-OH-hqX" eventType="valueChanged" id="uzG-bf-gZD"/>
                                                 </connections>
                                             </stepper>
@@ -147,7 +151,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2Y4-Zw-Cq3">
                                         <rect key="frame" x="668.66666666666663" y="0.0" width="151.33333333333337" height="228"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🥭" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9Dy-fn-aWv">
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🥭" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9Dy-fn-aWv">
                                                 <rect key="frame" x="0.0" y="0.0" width="151.33333333333334" height="153.66666666666666"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <nil key="textColor"/>
@@ -163,6 +167,7 @@
                                             <stepper opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="rC9-2X-3XB">
                                                 <rect key="frame" x="28.666666666666742" y="196" width="94" height="32"/>
                                                 <connections>
+                                                    <action selector="fruitImageDidTap:" destination="Y6W-OH-hqX" eventType="touchDragOutside" id="Mcw-wO-vfL"/>
                                                     <action selector="stockStepperDidTap:" destination="Y6W-OH-hqX" eventType="valueChanged" id="fvg-IA-yzN"/>
                                                 </connections>
                                             </stepper>
@@ -206,6 +211,11 @@
                         <outletCollection property="fruitStockSteppers" destination="VcE-hL-IZT" collectionClass="NSMutableArray" id="TIi-Ff-eVt"/>
                         <outletCollection property="fruitStockSteppers" destination="Zte-vD-EYH" collectionClass="NSMutableArray" id="tWt-sp-VRd"/>
                         <outletCollection property="fruitStockSteppers" destination="rC9-2X-3XB" collectionClass="NSMutableArray" id="vWo-5h-0bY"/>
+                        <outletCollection property="fruitImageLabels" destination="9zd-zQ-bic" collectionClass="NSMutableArray" id="Q1T-b9-08n"/>
+                        <outletCollection property="fruitImageLabels" destination="GvH-Q6-c1c" collectionClass="NSMutableArray" id="2Yp-QL-SA7"/>
+                        <outletCollection property="fruitImageLabels" destination="tJy-oH-bhJ" collectionClass="NSMutableArray" id="OeG-Br-Kwc"/>
+                        <outletCollection property="fruitImageLabels" destination="wLg-sk-RrL" collectionClass="NSMutableArray" id="k4p-Dl-aYy"/>
+                        <outletCollection property="fruitImageLabels" destination="9Dy-fn-aWv" collectionClass="NSMutableArray" id="I3z-pX-9XG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
