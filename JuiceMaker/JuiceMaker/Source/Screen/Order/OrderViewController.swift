@@ -57,8 +57,8 @@ final class OrderViewController: UIViewController, OrderDelegate {
         let alert = UIAlertController(title: "\(menu)쥬스 나왔습니다!",
                                       message: "맛있게 드세요!",
                                       preferredStyle: .alert)
-        let action = UIAlertAction(title: "확인", style: .default)
-        alert.addAction(action)
+        let confirm = UIAlertAction(title: "확인", style: .default)
+        alert.addAction(confirm)
         present(alert, animated: true, completion: nil)
     }
     
