@@ -69,7 +69,7 @@ https://user-images.githubusercontent.com/67406889/212216165-120f1579-b29d-40d5-
 　
 ## UML
 (View 제외)<br>
-<img width="805" alt="image" src="https://user-images.githubusercontent.com/67406889/212247333-783c57fa-41d7-4d06-9f8c-5f4e4b9c26b4.png">
+<img width="783" alt="image" src="https://user-images.githubusercontent.com/67406889/212268039-ad54fab4-071a-4e67-9e23-4657c4bb0a82.png">
 
 
 　
